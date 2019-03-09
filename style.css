@@ -48,9 +48,9 @@ section:last-child {
 .lesson-block-wrapper {
     flex-wrap: wrap;
     display: flex;
-	flex-direction: row;
-	/* justify-content: space-between; */
-	align-items: stretch;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: stretch;
     align-content: stretch;
     box-sizing: border-box;
 }
@@ -120,10 +120,58 @@ section:last-child {
 
 
 /* media */
-@media screen and (min-width: 375px) and (max-width: 667px) {
+@media (min-width: 320px) and (max-width: 374px) {
     h1 {
         font-size: 20px;
         text-align: center;
+        margin-bottom: 10px;
+    }
+    ul {
+        padding-inline-start: 0;
+        padding: 0 5px;
+    }
+    header {
+        margin-bottom: 20px;
+    }
+    .main-wrapper {
+        width: 300px;
+    }
+    section {
+        padding: 10px !important;
+    }
+    .lesson-block-wrapper {
+        display: block;
+    }
+    .lesson {
+        margin: 0 0 10px 0;
+    }
+    .lesson__title {
+        padding: 10px;
+    }
+    .lesson__date {
+        height: auto;
+        width: auto;
+        padding: 5px;
+    }
+    .lesson__day {
+        font-size: 20px;
+    }
+    .lesson__name {
+        font-size: 16px;
+    }
+    .lesson__plan {
+        padding: 15px;
+    }
+    .m-b--0 {
+        margin-bottom: 10px !important;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+    h1 {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 15px;
     }
     ul {
         padding-inline-start: 0;
@@ -150,5 +198,57 @@ section:last-child {
     }
     .lesson__day {
         font-size: 25px;
+    }
+    .m-b--0 {
+        margin-bottom: 20px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    ul {
+        padding-inline-start: 0;
+        padding: 0 5px;
+    }
+    header {
+        margin-bottom: 20px;
+    }
+    .main-wrapper {
+        width: 730px;
+    }
+    .lesson-block-wrapper {
+        display: flex;
+    }
+    .lesson {
+        flex:  0 0 330px;
+        margin: 0 20px 20px 0;
+    }
+    .lesson:nth-child(3n) {
+        margin-right: 20px;
+    }
+    .lesson:nth-child(2n) {
+        margin-right: 0;
+    }
+    .lesson:last-child {
+        flex: 0 0 330px;
+        margin-bottom: 0;
+    }
+    .lesson__title {
+        padding: 10px;
+    }
+    .lesson__date {
+        height: auto;
+        width: auto;
+        padding: 5px;
+    }
+    .lesson__day {
+        font-size: 20px;
+    }
+    .lesson__name {
+        font-size: 18px;
     }
 }
