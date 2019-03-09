@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body { 
+    background: #f6f5f3; 
+    font-family: 'Roboto', sans-serif;
+}
+
+body,div,h1,h2,h3,h4,h5,h6,p { padding: 0; margin: 0; }
+ul { padding-inline-start: 15px; list-style-type: none; margin: 0 }
+li { padding: 5px 0; border-bottom: 1px dotted #ffdb4d }
+li:last-child { border-bottom: none}
+h1 { margin-bottom: 20px; }
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+header {
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 50px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+.logo {
+    font-size: 20px;
+}
+.logo__color {
+    color: #ff0000;
+}
+.change-theme-btn {
+    position: absolute;
+    right: 0;
+}
+section {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px !important;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+section:last-child {
+    margin-bottom: 0;
+}
+.lesson-block-wrapper {
+    flex-wrap: wrap;
+    display: flex;
+	flex-direction: row;
+	/* justify-content: space-between; */
+	align-items: stretch;
+    align-content: stretch;
+    box-sizing: border-box;
+}
+.lesson {
+    flex:  0 0 290px;
+    justify-content: space-around;
+    margin: 0 18px 20px 0;
+    border-radius: 5px;
+    border: 2px solid #ffdb4d;
+    color: #383838;
+}
+.lesson:last-child {
+    flex: 0 0 290px;
+    margin-bottom: 0;
+}
+.lesson:nth-child(3n) {
+    margin-right: 0;
+}
+.lesson__title {
+    background-color: #ffdb4d;
+    padding: 15px;
+    display: flex;
+}
+.lesson__name {
+    font-weight: bold;
+    font-size: 20px;
+    margin: auto 0 auto 10px;
+}
+.lesson__date {
+    width: 40px;
+    height: 40px;
+    border: 2px dotted #fff;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    line-height: 1;
+}
+.lesson__day {
+    font-size: 30px;
+    font-weight: bold;
+}
+.lesson__mmYYYY {
+    font-size: 12px;
+}
+.lesson__plan {
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Модификаторы */
+.m-b--0 {
+    margin-bottom: 0 !important;
+}
+
+/* Темная тема */
+.dark-theme-change {
+    background-color: #0e1621;
+    transition-duration: 1s;
+}
+.dark-theme-section {
+    background-color: #17212b;
+    transition-duration: 1s;
+}
+.dark-theme-text {
+    color: #fffffff3;
+}
+
+
+/* media */
+@media screen and (min-width: 375px) and (max-width: 667px) {
+    h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+    ul {
+        padding-inline-start: 0;
+        padding: 0 5px;
+    }
+    header {
+        margin-bottom: 20px;
+    }
+    .main-wrapper {
+        width: 340px;
+    }
+    .lesson-block-wrapper {
+        display: block;
+    }
+    .lesson {
+        margin: 0 0 20px 0;
+    }
+    .lesson__title {
+        padding: 10px;
+    }
+    .lesson__date {
+        height: auto;
+        padding: 5px;
+    }
+    .lesson__day {
+        font-size: 25px;
+    }
+}
