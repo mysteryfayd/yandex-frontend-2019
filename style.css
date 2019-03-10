@@ -106,6 +106,7 @@ section:last-child {
     font-size: 14px;
 }
 
+/* go to top btn */
 .go-to-top {
     position: absolute;
     right: 0;
@@ -119,8 +120,7 @@ section:last-child {
     background-color: #ffdb4d;
     transition-duration: 0.5s;
 }
-
-.go-to-top DIV {
+.go-to-top div {
     width: 0;
     height: 0;
     margin: auto;
@@ -132,7 +132,6 @@ section:last-child {
     padding-top: 10px;
 }
 
-
 /* Модификаторы */
 .m-b--0 {
     margin-bottom: 0 !important;
@@ -141,7 +140,7 @@ section:last-child {
     font-size: 18px;
 }
 
-/* Темная тема */
+/* Смена темы */
 .dark-theme-change {
     background-color: #0e1621;
     transition-duration: 1s;
@@ -153,6 +152,28 @@ section:last-child {
 .dark-theme-text {
     color: #fffffff3;
 }
+
+.change-theme-ico {
+    width: 25px;
+    height: 25px;
+}
+.light-theme {
+    background: url(img/light.png) no-repeat;
+    background-size: cover;
+}
+.light-theme:hover {
+    background: url(img/lightHover.png) no-repeat;
+    background-size: cover;
+}
+.dark-theme {
+    background: url(img/dark.png) no-repeat;
+    background-size: cover;
+}
+.dark-theme:hover {
+    background: url(img/darkHover.png) no-repeat;
+    background-size: cover;
+}
+
 
 /* media */
 @media (min-width: 320px) and (max-width: 374px) {
