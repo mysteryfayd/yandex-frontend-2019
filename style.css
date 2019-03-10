@@ -106,6 +106,33 @@ section:last-child {
     font-size: 14px;
 }
 
+.go-to-top {
+    position: absolute;
+    right: 0;
+
+    width: 25px;
+    height: 25px;
+    background-color: #2f2f2f;
+    border-radius: 4px;
+}
+.go-to-top:hover {
+    background-color: #ffdb4d;
+    transition-duration: 0.5s;
+}
+
+.go-to-top DIV {
+    width: 0;
+    height: 0;
+    margin: auto;
+    border: 5px solid transparent;
+}
+ .go-to-top .arrow-bottom {
+    border-bottom-color: #fff;
+    border-top: 0;
+    padding-top: 10px;
+}
+
+
 /* Модификаторы */
 .m-b--0 {
     margin-bottom: 0 !important;
@@ -126,7 +153,6 @@ section:last-child {
 .dark-theme-text {
     color: #fffffff3;
 }
-
 
 /* media */
 @media (min-width: 320px) and (max-width: 374px) {
