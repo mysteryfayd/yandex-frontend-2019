@@ -1,0 +1,37 @@
+header {
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 50px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+.logo {
+    font-size: 20px;
+}
+.logo__color {
+    color: #ff0000;
+}
+.change-theme-btn {
+    position: absolute;
+    right: 0;
+}
+.change-theme-ico {
+    width: 25px;
+    height: 25px;
+}
+.light-theme {
+    background: url(/img/light.png) no-repeat;
+    background-size: cover;
+}
+.light-theme:hover {
+    background: url(/img/lightHover.png) no-repeat;
+    background-size: cover;
+}
+.dark-theme {
+    background: url(/img/dark.png) no-repeat;
+    background-size: cover;
+}
+.dark-theme:hover {
+    background: url(/img/darkHover.png) no-repeat;
+    background-size: cover;
+}
