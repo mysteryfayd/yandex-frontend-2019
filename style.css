@@ -68,6 +68,11 @@ section:last-child {
     border: 2px solid #ffdb4d;
     color: #383838;
 }
+.lesson:hover {
+    /* border: 2px solid #e4bd22; */
+    /* box-shadow: 0 0 15px rgba(0,0,0,0.1); */
+    box-shadow: 0 0 10px #ffdb4d;
+}
 .lesson:last-child {
     flex: 0 0 290px;
     margin-bottom: 0;
