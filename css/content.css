@@ -73,6 +73,14 @@ section:last-child {
     font-size: 14px;
 }
 
+/* completed lessons */
+.lesson-completed {
+    opacity: 0.4;
+}
+.lesson-completed:hover {
+    opacity: 1;
+}
+
 /* Смена темы */
 .dark-theme-change {
     background-color: #0e1621;
@@ -84,4 +92,14 @@ section:last-child {
 }
 .dark-theme-text {
     color: #fffffff3;
+}
+.dark-theme-lesson {
+    border: 2px solid #0e1621;
+}
+.dark-theme-lesson:hover {
+    box-shadow: 0 0 10px #0e1621;
+}
+.dark-theme-lesson__title {
+    background-color: #0e1621;
+    color: #ffdb4d;
 }
