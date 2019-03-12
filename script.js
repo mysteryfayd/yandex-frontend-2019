@@ -1,3 +1,4 @@
+// for dark theme
 var themeSwitcher = document.getElementById('changeTheme'),
     elem = document.querySelectorAll("#section"),
     elem0 = document.querySelectorAll(".home-logo__default"),
@@ -24,5 +25,22 @@ themeSwitcher.onclick = function() {
         elem3[l].classList.toggle("dark-theme-lesson__title");
     }
     themeSwitcher.classList.toggle("dark-theme");
+}
+
+// go to top btn
+var smoothJumpUp = function() {
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+        window.scrollBy(0, -50);
+        setTimeout(smoothJumpUp, 5);
+    }
+}
+
+window.onscroll = function() {
+    var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrolled > 250) {
+        document.getElementById('upbutton').style.display = 'block';
+    } else {
+        document.getElementById('upbutton').style.display = 'none';
+    }
 }
 
