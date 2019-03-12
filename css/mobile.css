@@ -21,7 +21,7 @@
         display: block;
     }
     .lesson {
-        margin: 0 0 10px 0;
+        margin: 0 10px 10px 0;
     }
     .lesson__title {
         padding: 10px;
@@ -39,6 +39,24 @@
     }
     .lesson__plan {
         padding: 15px;
+    }
+    .lesson-block-wrapper {
+        display: flex;
+        overflow: hidden;
+        overflow-x: scroll;
+        white-space: nowrap; 
+        padding-bottom: 25px;
+    }
+    .lesson-all-blocks {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .lesson {
+        white-space: normal;
+        vertical-align: top; 
+        display: inline-block;
+        flex: 0 0 260px;;
+        height: 100%;
     }
     .m-b--0 {
         margin-bottom: 10px !important;
@@ -61,11 +79,17 @@
     .main-wrapper {
         width: 340px;
     }
+    section {
+        padding: 10px !important;
+    }
+    .lesson-block-title {
+        padding-top: 10px;
+    }
     .lesson-block-wrapper {
         display: block;
     }
     .lesson {
-        margin: 0 0 20px 0;
+        margin: 0 5px 20px 0;
     }
     .lesson__title {
         padding: 10px;
@@ -80,6 +104,25 @@
     .m-b--0 {
         margin-bottom: 20px !important;
     }
+    .lesson-block-wrapper {
+        display: flex;
+        overflow: hidden;
+        overflow-x: scroll;
+        white-space: nowrap; 
+        padding-bottom: 25px;
+    }
+    .lesson-all-blocks {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .lesson {
+        white-space: normal;
+        vertical-align: top; 
+        display: inline-block;
+        width: 280px;
+        height: 100%;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -100,6 +143,10 @@
     }
     .lesson-block-wrapper {
         display: flex;
+    }
+    .lesson-all-blocks {
+        display: flex;
+        /* flex-wrap: nowrap; */
     }
     .lesson {
         flex:  0 0 330px;

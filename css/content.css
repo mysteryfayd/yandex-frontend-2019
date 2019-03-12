@@ -15,6 +15,10 @@ section {
 section:last-child {
     margin-bottom: 0;
 }
+.lesson-all-blocks {
+    display: flex;
+    flex-wrap: wrap;
+}
 .lesson-block-wrapper {
     flex-wrap: wrap;
     display: flex;

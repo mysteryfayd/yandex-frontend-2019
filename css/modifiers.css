@@ -4,3 +4,6 @@
 .f-s--18 {
     font-size: 18px;
 }
+.f-w--nw {
+    flex-wrap: nowrap;
+}
