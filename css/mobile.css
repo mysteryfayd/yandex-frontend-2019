@@ -147,12 +147,8 @@
     .main-wrapper {
         width: 730px;
     }
-    .lesson-block-wrapper {
-        display: flex;
-    }
     .lesson-all-blocks {
         display: flex;
-        /* flex-wrap: nowrap; */
     }
     .lesson {
         flex:  0 0 330px;
@@ -166,7 +162,7 @@
     }
     .lesson:last-child {
         flex: 0 0 330px;
-        margin-bottom: 0;
+        margin-bottom: 20px;
     }
     .lesson__title {
         padding: 10px;
@@ -181,5 +177,8 @@
     }
     .lesson__name {
         font-size: 18px;
+    }
+    .m-b--0 {
+        margin-bottom: 20px !important;
     }
 }

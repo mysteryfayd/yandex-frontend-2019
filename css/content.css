@@ -21,7 +21,7 @@ section:last-child {
 }
 .lesson-block-wrapper {
     flex-wrap: wrap;
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
     /* justify-content: space-between; */
     align-items: stretch;
