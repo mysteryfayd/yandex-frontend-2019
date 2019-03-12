@@ -3,6 +3,7 @@
 @import url("/css/footer.css");
 @import url("/css/modifiers.css");
 @import url("/css/mobile.css");
+@import url("/css/elements.css");
 
 @font-face {
     font-family: 'Roboto Regular';
