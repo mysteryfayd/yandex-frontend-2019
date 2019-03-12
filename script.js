@@ -1,6 +1,7 @@
 var themeSwitcher = document.getElementById('changeTheme'),
     elem = document.querySelectorAll("#section"),
-    elem1 = document.querySelectorAll(".lesson__plan, .lesson-block-title, .logo"),
+    elem0 = document.querySelectorAll(".home-logo__default"),
+    elem1 = document.querySelectorAll(".lesson__plan, .lesson-block-title"),
     elem2 = document.querySelectorAll(".lesson"),
     elem3 = document.querySelectorAll(".lesson__title");
 
@@ -9,6 +10,9 @@ themeSwitcher.onclick = function() {
 
     for (var i = 0; i < elem.length; i++) {
         elem[i].classList.toggle("dark-theme-section");
+    }
+    for (var y = 0; y < elem0.length; y++) {
+        elem0[y].classList.toggle("home-logo__dark");
     }
     for (var j = 0; j < elem1.length; j++) {
         elem1[j].classList.toggle("dark-theme-text");

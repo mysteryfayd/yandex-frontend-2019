@@ -5,12 +5,30 @@ header {
     margin-bottom: 50px;
     box-shadow: 0 0 15px rgba(0,0,0,0.05);
 }
-.logo {
+/* .logo {
     font-size: 20px;
 }
 .logo__color {
     color: #ff0000;
+} */
+.home-logo__link {
+    display: block;
+    width: 230px;
+    height: 25px;
 }
+.home-logo__link:link {
+    cursor: pointer;
+}
+.home-logo__default {
+    height: 25px;
+    background: url(/img/logoDefault.png) no-repeat;
+}
+.home-logo__dark {
+    height: 25px;
+    background: url(/img/logoWhite.png) no-repeat;
+}
+
+
 .change-theme-btn {
     position: absolute;
     right: 0;

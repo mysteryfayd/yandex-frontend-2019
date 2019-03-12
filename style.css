@@ -1,14 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
 @import url("/css/header.css");
 @import url("/css/content.css");
 @import url("/css/footer.css");
 @import url("/css/modifiers.css");
 @import url("/css/mobile.css");
 
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('fonts/Roboto-Regular.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Cyr Roman';
+    src: url('fonts/HelveticaNeueCyr-Roman.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body { 
     background: #f6f5f3; 
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Regular', sans-serif;
 }
 body,div,h1,h2,h3,h4,h5,h6,p { padding: 0; margin: 0; }
 ul { padding-inline-start: 15px; list-style-type: none; margin: 0 }

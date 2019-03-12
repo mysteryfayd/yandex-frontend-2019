@@ -25,6 +25,7 @@ section:last-child {
     box-sizing: border-box;
 }
 .lesson {
+    font-family: 'Helvetica Neue Cyr Roman', sans-serif;
     flex:  0 0 290px;
     justify-content: space-around;
     margin: 0 18px 20px 0;
