@@ -3,19 +3,24 @@ footer {
     background-color: #fff;
     margin-top: 50px;
     box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    z-index: 111;
 }
 
 /* go to top btn */
 .go-to-top {
-    position: absolute;
-    right: 0;
-    width: 25px;
-    height: 25px;
+    position: fixed;
+    cursor: pointer;
+    display: none;
+    bottom: 65px;
+    right: 20px;
+
+    width: 35px;
+    height: 35px;
     background-color: #2f2f2f;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 .go-to-top:hover {
-    background-color: #ffdb4d;
+    background-color: #ffe57b;
     transition-duration: 0.5s;
 }
 .go-to-top div {
@@ -24,8 +29,8 @@ footer {
     margin: auto;
     border: 5px solid transparent;
 }
- .go-to-top .arrow-bottom {
+ .go-to-top .go-to-top__arrow {
     border-bottom-color: #fff;
     border-top: 0;
-    padding-top: 10px;
+    padding-top: 15px;
 }
