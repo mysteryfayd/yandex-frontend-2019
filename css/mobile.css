@@ -5,7 +5,8 @@
         margin-bottom: 10px;
     }
     ul {
-        padding-inline-start: 0;
+        -webkit-padding-start: 0;
+                padding-inline-start: 0;
         padding: 0 5px;
     }
     header {
@@ -44,6 +45,8 @@
         padding: 15px;
     }
     .lesson-block-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         overflow: hidden;
         overflow-x: scroll;
@@ -51,14 +54,19 @@
         padding-bottom: 25px;
     }
     .lesson-all-blocks {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
     }
     .lesson {
         white-space: normal;
         vertical-align: top; 
         display: inline-block;
-        flex: 0 0 260px;;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 260px;
+                flex: 0 0 260px;;
         height: 100%;
     }
     .m-b--0 {
@@ -73,7 +81,8 @@
         margin-bottom: 15px;
     }
     ul {
-        padding-inline-start: 0;
+        -webkit-padding-start: 0;
+                padding-inline-start: 0;
         padding: 0 5px;
     }
     header {
@@ -111,6 +120,8 @@
         margin-bottom: 20px !important;
     }
     .lesson-block-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         overflow: hidden;
         overflow-x: scroll;
@@ -118,15 +129,18 @@
         padding-bottom: 25px;
     }
     .lesson-all-blocks {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
     }
     .lesson {
         white-space: normal;
         vertical-align: top; 
-        display: inline-block;
+        /* display: inline-block; */
         width: 280px;
-        height: 100%;
+        /* height: 100%; */
     }
 
 }
@@ -138,7 +152,8 @@
         margin-bottom: 15px;
     }
     ul {
-        padding-inline-start: 0;
+        -webkit-padding-start: 0;
+                padding-inline-start: 0;
         padding: 0 5px;
     }
     header {
@@ -148,10 +163,14 @@
         width: 730px;
     }
     .lesson-all-blocks {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .lesson {
-        flex:  0 0 330px;
+        -webkit-box-flex:  0;
+            -ms-flex:  0 0 330px;
+                flex:  0 0 330px;
         margin: 0 20px 20px 0;
     }
     .lesson:nth-child(3n) {
@@ -161,7 +180,9 @@
         margin-right: 0;
     }
     .lesson:last-child {
-        flex: 0 0 330px;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 330px;
+                flex: 0 0 330px;
         margin-bottom: 20px;
     }
     .lesson__title {

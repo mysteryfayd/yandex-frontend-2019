@@ -1,6 +1,11 @@
 .main-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: relative;
     width: 960px;
     margin: 0 auto;
@@ -10,38 +15,56 @@ section {
     margin-bottom: 20px;
     padding: 20px !important;
     border-radius: 5px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.05);
+            box-shadow: 0 0 15px rgba(0,0,0,0.05);
 }
 section:last-child {
     margin-bottom: 0;
 }
 .lesson-all-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .lesson-block-wrapper {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     /* display: flex; */
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     /* justify-content: space-between; */
-    align-items: stretch;
-    align-content: stretch;
-    box-sizing: border-box;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 .lesson {
     font-family: 'Helvetica Neue Cyr Roman', sans-serif;
-    flex:  0 0 290px;
-    justify-content: space-around;
+    -webkit-box-flex:  0;
+        -ms-flex:  0 0 290px;
+            flex:  0 0 290px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin: 0 18px 20px 0;
     border-radius: 5px;
     border: 2px solid #ffdb4d;
     color: #383838;
 }
 .lesson:hover {
-    box-shadow: 0 0 10px #ffdb4d;
+    -webkit-box-shadow: 0 0 10px #ffdb4d;
+            box-shadow: 0 0 10px #ffdb4d;
 }
 .lesson:last-child {
-    flex: 0 0 290px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 290px;
+            flex: 0 0 290px;
     margin-bottom: 0;
 }
 .lesson:nth-child(3n) {
@@ -50,6 +73,8 @@ section:last-child {
 .lesson__title {
     background-color: #ffdb4d;
     padding: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .lesson__name {
@@ -89,11 +114,15 @@ section:last-child {
 /* Смена темы */
 .dark-theme-change {
     background-color: #0e1621;
-    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+         -o-transition-duration: 1s;
+            transition-duration: 1s;
 }
 .dark-theme-section {
     background-color: #17212b;
-    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+         -o-transition-duration: 1s;
+            transition-duration: 1s;
 }
 .dark-theme-text {
     color: #fffffff3;
@@ -102,7 +131,8 @@ section:last-child {
     border: 2px solid #0e1621;
 }
 .dark-theme-lesson:hover {
-    box-shadow: 0 0 10px #0e1621;
+    -webkit-box-shadow: 0 0 10px #0e1621;
+            box-shadow: 0 0 10px #0e1621;
 }
 .dark-theme-lesson__title {
     background-color: #0e1621;

@@ -1,6 +1,6 @@
 // for dark theme
 var themeSwitcher = document.getElementById('changeTheme'),
-    elem = document.querySelectorAll("#section"),
+    elem = document.querySelectorAll(".section"),
     elem0 = document.querySelectorAll(".home-logo__default"),
     elem1 = document.querySelectorAll(".lesson__plan, .lesson-block-title"),
     elem2 = document.querySelectorAll(".lesson"),
@@ -25,7 +25,7 @@ themeSwitcher.onclick = function() {
         elem3[l].classList.toggle("dark-theme-lesson__title");
     }
     themeSwitcher.classList.toggle("dark-theme");
-}
+};
 
 // go to top btn
 var smoothJumpUp = function() {
@@ -33,7 +33,7 @@ var smoothJumpUp = function() {
         window.scrollBy(0, -50);
         setTimeout(smoothJumpUp, 5);
     }
-}
+};
 
 window.onscroll = function() {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
@@ -42,5 +42,5 @@ window.onscroll = function() {
     } else {
         document.getElementById('upbutton').style.display = 'none';
     }
-}
+};
 
