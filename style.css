@@ -23,9 +23,9 @@ body {
     background: #f6f5f3; 
     font-family: 'Roboto Regular', sans-serif;
 }
+
 body,div,h1,h2,h3,h4,h5,h6,p { padding: 0; margin: 0; }
-ul { padding-inline-start: 15px; list-style-type: none; margin: 0 }
+ul { -webkit-padding-start: 15px; padding-inline-start: 15px; list-style-type: none; margin: 0 }
 li { padding: 5px 0; border-bottom: 1px dotted #ffdb4d }
-li:last-child { border-bottom: none}
 h1 { visibility: hidden; margin: 10px 0; font-weight: normal}
 h2 { margin-bottom: 20px; }

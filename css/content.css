@@ -21,22 +21,13 @@ section {
 section:last-child {
     margin-bottom: 0;
 }
-.lesson-all-blocks {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-}
 .lesson-block-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    /* display: flex; */
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    /* justify-content: space-between; */
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
@@ -44,6 +35,16 @@ section:last-child {
         align-content: stretch;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+}
+.lesson-all-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.lesson-block-wrapper ul, .lesson-block-wrapper > ul > li {
+    padding: 0;
 }
 .lesson {
     font-family: 'Helvetica Neue Cyr Roman', sans-serif;
@@ -101,6 +102,9 @@ section:last-child {
 .lesson__plan {
     padding: 20px;
     font-size: 14px;
+}
+.lesson__plan li:last-child { 
+    border-bottom: none
 }
 
 /* completed lessons */
