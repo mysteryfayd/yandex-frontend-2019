@@ -44,3 +44,26 @@ window.onscroll = function() {
     }
 };
 
+// autocheck completed lessons
+document.addEventListener("DOMContentLoaded", () => {
+	const div = document.querySelectorAll(".lesson");
+
+	function lessonsCompleted(){
+		if (unixDates){
+			for (let i = 0; i < unixDates.lastIndexOf(true)+1; i++) {
+				div[i].classList.add("lesson-completed");
+			}
+		}
+	}
+
+	let dates = [];
+	const date = document.querySelectorAll(".date");
+	date.forEach((elem) => dates.push("2019." + elem.textContent.split(".").reverse().join(".") ));
+	const d  = new Date();
+	const string = `${d.getFullYear()}.0${d.getMonth()+1}.0${d.getDate()}`;
+	const today  = Date.parse(string);
+	let unixDates = [];
+	dates.forEach((e) => unixDates.push(Date.parse(e) < today));
+	lessonsCompleted();
+	dates = null;
+});

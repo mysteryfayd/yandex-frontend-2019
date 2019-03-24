@@ -80,7 +80,7 @@ section:last-child {
 }
 .lesson__name {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     margin: auto 0 auto 10px;
 }
 .lesson__date {
@@ -91,6 +91,9 @@ section:last-child {
     padding: 10px;
     text-align: center;
     line-height: 1;
+}
+.date {
+    visibility: hidden;
 }
 .lesson__day {
     font-size: 30px;
